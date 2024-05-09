@@ -27,7 +27,7 @@ body{
     cursor: pointer;        /*mouse pointer into hand pointer */
     flex:0.5;
     margin:10px;
-    position: relative;
+    /* position: relative; */
     transition: flex 0.7s ease-in;
 }
 

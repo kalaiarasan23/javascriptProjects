@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <script>
+        let game=['rock','paper','scissor'];
+        console.log(Math.floor(Math.random()*3));
+        
+        while(confirm("enter yes to play game"))
+        {
+            let p1 = prompt("enter the rock paper or scissor");
+            if(game.includes(p1))
+            {
+                let random = Math.floor(Math.random()*3);
+                if(game[random] === p1) 
+                    alert("tie");
+                else if(game[random] == "rock" &&  p1 == "paper" 
+                    || game[random] == "paper" && p1 == "scissor"
+                    || game[random] == "scissor" && p1 == "rock")
+                    alert("you wins the match");
+                else
+                    alert("you lose. Better luck next time ");
+            }
+            else
+                alert("worry choices");
+            
+        }
+    </script>
+</body>
+</html>
